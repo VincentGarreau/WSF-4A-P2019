@@ -1,0 +1,28 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "html"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": { "config": "webpack.config.js" }
+    }
+  },
+  "rules": {
+    "no-console": 0,
+    "semi": [1, never],
+    "comma-dangle": 0,
+    "padded-blocks": 0,
+    "spaced-comment": 0,
+    "no-undef": 0,
+    "func-names": 0,
+    "no-multiple-empty-lines": [2, {'max': 2, 'maxEOF': 2}],
+    'max-len': [2, 200, 2, {
+      'ignoreUrls': false,
+      'ignoreComments': false
+    }],
+    "no-param-reassign": 1,
+    "global-require": 0,
+    "no-useless-escape": 0
+  }
+}
