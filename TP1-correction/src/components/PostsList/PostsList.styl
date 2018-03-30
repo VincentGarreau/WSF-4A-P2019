@@ -1,0 +1,37 @@
+@import '~css/variables'
+
+.posts-list
+  // max-width 1000px
+  // margin 30px auto 50px auto
+  margin-bottom 50px
+  display flex
+  align-items flex-start
+  flex-wrap wrap
+
+.posts-list-filters
+  display flex
+  justify-content center
+  select
+    cursor pointer
+
+.posts-list-stats
+  display flex
+  align-items center
+  justify-content center
+  margin 30px 0
+
+.posts-list-stats-item
+  text-align center
+  &:not(:last-child)
+    margin-right 20px
+  span
+    display block
+    &:first-child
+      font-weight 900
+      color $orange-flame-pea
+      font-size 1.2em
+    &:last-child
+      text-transform uppercase
+      font-size .8em
+      color $gray-gray
+      margin-top 6px
